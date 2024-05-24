@@ -13,7 +13,7 @@ use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 use yii\web\View;
 
-ViteAppAsset::register($this);
+//ViteAppAsset::register($this);
 AppAsset::register($this);
 
 ?>
