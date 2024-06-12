@@ -8,9 +8,9 @@ export default defineConfig({
             // overwrite default .html entry
             input: './main.js',
             output: {
-                entryFileNames: `assets/[name].js`,
-                chunkFileNames: `assets/[name].js`,
-                assetFileNames: `assets/[name].[ext]`
+                entryFileNames: `assets/[hash].js`,
+                chunkFileNames: `assets/[hash].js`,
+                assetFileNames: `assets/[hash].[ext]`
             }
         },
         outDir: '../web/build/'

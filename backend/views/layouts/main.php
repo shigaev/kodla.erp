@@ -5,7 +5,7 @@
 /** @var string $content */
 
 use backend\assets\AppAsset;
-use backend\assets\ViteAppAsset;
+use backend\assets\ViteAsset;
 use common\widgets\Alert;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
@@ -13,8 +13,8 @@ use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 use yii\web\View;
 
-//ViteAppAsset::register($this);
 AppAsset::register($this);
+ViteAsset::register($this);
 
 ?>
 <?php $this->beginPage() ?>
@@ -36,7 +36,7 @@ AppAsset::register($this);
             'brandLabel' => Yii::$app->name,
             'brandUrl' => Yii::$app->homeUrl,
             'options' => [
-                'class' => 'navbar navbar-expand-md navbar-dark bg-dark fixed-top',
+                'class' => 'navbar navbar-expand-md navbar-dark bg-dark',
             ],
         ]);
         $menuItems = [
@@ -70,7 +70,6 @@ AppAsset::register($this);
             ]) ?>
             <?= Alert::widget() ?>
             <?= $content ?>
-            <button class="btn btn-outline-secondary custom-btn">Click</button>
         </div>
     </main>
 

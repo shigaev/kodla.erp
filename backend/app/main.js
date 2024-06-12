@@ -1,9 +1,4 @@
-import './main.css'
+import './src/styles/main.scss'
 
-console.log('Hello')
-
-const cBtn = document.querySelector('.custom-btn')
-
-cBtn.addEventListener('click', () => {
-    console.log('clicked')
-})
+console.log('Included css')
+console.log('This is Vite')
